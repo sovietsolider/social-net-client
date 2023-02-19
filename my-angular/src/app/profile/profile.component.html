@@ -1,0 +1,37 @@
+<div class="container" style="margin-left:50px;margin-top: 10px;">
+  <div class="row" style="width:40%;">
+    <img src="{{userPhotoURI}}" alt="">
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <div class="d-flex flex-column justify-content-start" >
+        <!--<img src="{{userPhotoURI}}" alt="">-->
+
+        <p class="user-info" style="margin-top: 10px;">Full name: {{user_name}}</p>
+        <p class="user-info">Birth date: {{user_birth_date}}</p>
+        <p class="user-info">Role: {{user_role}}</p>
+        <p class="user-info">Status: {{user_status}}</p>
+        <form action="https://localhost:3000/addPhoto" method="POST" id="photoForm" >
+          <input class="form-control" type="file" name="photoData" style="width:50%;">
+        </form>
+        <button class="user-info btn" style="width: 50%;background-color:gray;color: white; margin-bottom: 10px; margin-top:10px;" (click)="uploadPhoto()">UPLOAD</button>
+        <a class="user-info btn btn-primary" style="width:50%; margin-bottom: 10px;" href="https://localhost:3000" *ngIf="isAdmin">Admin panel</a>
+        <a class ="user-info user-info btn btn-primary" style="width:50%;" (click)="authService.logout()" *ngIf="authService.logIn">Logout</a>
+
+        <!--<input type="file" (change) = getPhoto($event) name="photoData">
+        <button (click)="uploadPhoto()">UPLOAD></button>-->
+      </div>
+    </div>
+    <div class="col-sm">
+      <!--<a class="nav-link" routerLink="/profile/{{user_id}}">News</a>-->
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!--<li style="float:right" > <a class="nav-link"  style="float:right" routerLink="login" routerLinkActive="active" *ngIf="!authService.logIn">Login</a> </li> -->
+

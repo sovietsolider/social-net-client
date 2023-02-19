@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "full_name": "Anatoliy Golikov",
+    "birth_date": "2003-01-13",
+    "email": "tgolikov03@mail.ru",
+    "password": "123",
+    "photo": "",
+    "role": "admin",
+    "status": "active",
+    "friends": [1],
+    "news": ["Hello world", "ANTYIHYPE"]
+  },
+  {
+    "id": 1,
+    "full_name": "Artem Reshotkin",
+    "birth_date": "2002-08-21",
+    "email": "reshotkin02@mail.ru",
+    "password": "123",
+    "photo": "",
+    "role": "user",
+    "status": "active",
+    "friends": [0],
+    "news": ["Hi, Im Artem", "TODAY IM GONING TO DO SOME"]
+  },
+  {
+    "id": 2,
+    "full_name": "Alexander Kozikov",
+    "birth_date": "2002-08-21",
+    "email": "koZZZikov|RUS|@mail.ru",
+    "password": "123",
+    "photo": "",
+    "role": "user",
+    "status": "active",
+    "friends": [0, 1],
+    "news": ["Im alex kozikov"]
+  }
+]
